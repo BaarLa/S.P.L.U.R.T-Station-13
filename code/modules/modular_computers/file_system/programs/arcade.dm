@@ -76,7 +76,7 @@
 
 /datum/computer_file/program/arcade/ui_assets(mob/user)
 	return list(
-		get_asset_datum(/datum/asset/simple/arcade),
+		get_asset_datum(/datum/asset/simple/Arcade),
 	)
 
 /datum/computer_file/program/arcade/ui_data(mob/user)

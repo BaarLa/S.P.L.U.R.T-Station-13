@@ -95,7 +95,7 @@
 
 /datum/achievement_data/ui_assets(mob/user)
 	return list(
-		get_asset_datum(/datum/asset/spritesheet/simple/achievements),
+		get_asset_datum(/datum/asset/spritesheet/simple/Achievements),
 	)
 
 /datum/achievement_data/ui_state(mob/user)
@@ -113,7 +113,7 @@
 	ret_data["achievements"] = list()
 	ret_data["user_key"] = user.ckey
 
-	var/datum/asset/spritesheet/simple/assets = get_asset_datum(/datum/asset/spritesheet/simple/achievements)
+	var/datum/asset/spritesheet/simple/assets = get_asset_datum(/datum/asset/spritesheet/simple/Achievements)
 	//This should be split into static data later
 	for(var/achievement_type in SSachievements.awards)
 		if(!SSachievements.awards[achievement_type].name) //No name? we a subtype.
